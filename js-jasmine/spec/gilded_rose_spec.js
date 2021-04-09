@@ -9,6 +9,13 @@ describe("Gilded Rose", function() {
       expect(items[0].quality).toEqual(49);
     });
 
+    it("should update values for CONJURED ITEMS - still in date", function() {
+      const gildedRose = new Shop([ new Item("Conjured Item", 20, 50) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(19);
+      expect(items[0].quality).toEqual(48);
+    });
+
     it("should update values for BACKSTAGE PASSES - above 10 days left", function() {
      const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 11, 20) ]);
      const items = gildedRose.updateQuality();
@@ -52,6 +59,13 @@ describe("Gilded Rose", function() {
       const items = gildedRose.updateQuality();
       expect(items[0].sellIn).toEqual(-1);
       expect(items[0].quality).toEqual(8)
+    });
+
+    it("should update values for CONJURED ITEMS & quality 2x - out of date", function() {
+      const gildedRose = new Shop([ new Item("Conjured Item", 0, 10) ]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(-1);
+      expect(items[0].quality).toEqual(6)
     })
 
     it("should update values of BACKSTAGE PASSES to 0  - out of date", function() {
@@ -74,10 +88,12 @@ describe("Gilded Rose", function() {
       const gildedRose = new Shop([ 
         new Item("regularItem", 5, 0),
         new Item("Backstage passes to a TAFKAL80ETC concert", 0, 0 ), 
+        new Item("Conjured Item", 5, 1)
       ]);
       const items = gildedRose.updateQuality();
       expect(items[0].quality).toEqual(0);
       expect(items[1].quality).toEqual(0);
+      expect(items[2].quality).toEqual(0);
     });
 
     it("cannot let quality go above 50 - while still in date", function() {
