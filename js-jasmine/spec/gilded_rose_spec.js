@@ -1,4 +1,4 @@
-// var {Shop, Item} = require('../src/gildedRose.js');
+
 describe("Gilded Rose", function() {
   describe("In Date Items", function(){
     it("should update values for REGULAR ITEMS - still in date", function() {
