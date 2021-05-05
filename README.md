@@ -1,5 +1,5 @@
 # Gilded rose tech test
-## overview
+## Overview
 This is a well known kata developed by [Terry Hughes](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/). This is commonly used as a tech test to assess a candidate's ability to read, refactor and extend legacy code.
 
 I opted to do the challenege in Java-Script and use the Jasmine testing framework. There was the option to use image testing but I chose to write my own tests to gain a better understanding of the code. 
