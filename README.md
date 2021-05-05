@@ -11,6 +11,7 @@ The files are contained in the js-jasmine directory, the `original_code.js` & `g
 - $`open SpecRunner.html` if on linux
 - $`start SpecRunner.html` if on windows
 - You should the the jasmine test page open on your browser. All 28 tests will be passing. Turn off the 'run tests in random order' option as it will sperate tests for original and updated code. 
+![jasmine_test_results](https://user-images.githubusercontent.com/67878899/117170516-012e3c00-adc2-11eb-9f58-773c4b8d27a7.png)
 - Compare the original and updated code to assess the quality of the changes, as well as the added `conjured item` handling functions
 
 ## My thoughts

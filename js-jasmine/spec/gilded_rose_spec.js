@@ -1,5 +1,5 @@
 
-describe("Gilded Rose", function() {
+describe("Updated Code - Gilded Rose", function() {
   describe("In Date Items", function(){
     it("should update values for REGULAR ITEMS - still in date", function() {
       const gildedRose = new Shop([ new Item("regularItem", 20, 50) ]);
