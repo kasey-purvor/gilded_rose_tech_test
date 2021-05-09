@@ -3,7 +3,7 @@
 This is a well known kata developed by [Terry Hughes](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/). This is commonly used as a tech test to assess a candidate's ability to read, refactor and extend legacy code.
 
 I opted to do the challenege in Java-Script and use the Jasmine testing framework. There was the option to use image testing but I chose to write my own tests to gain a better understanding of the code. 
-The files are contained in the js-jasmine directory, the `original_code.js` & `gilded_rose.js` files are in the scr folder and the respective spec files in the spec folder. To run the tests you must do the following: 
+All functional files are contained in the js-jasmine directory, the `original_code.js` & `gilded_rose.js` files are in the src folder and the respective spec files in the spec folder. I have included and run seperate (identical) tests on the original code to assist with comparison. To run the tests you must do the following: 
 
 - $`git clone https://github.com/kasey-purvor/gilded_rose_tech_test.git`
 - $`cd gilded_rose_tech_test`
